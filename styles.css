@@ -1,3 +1,5 @@
+@media screen (min-width: 600px) and (max-width:800px){
+
 *{
   background-color: azure;
 }
@@ -27,7 +29,7 @@ header h1{
   margin-left: 50px;
   padding: 5px;
   align-items: 20px;
-  
+  overflow: hidden;
 }
 .navcontent{
   list-style: none;
@@ -72,4 +74,7 @@ header h1{
  }
 footer p{
   text-align: end;
+}
+
+
 }
