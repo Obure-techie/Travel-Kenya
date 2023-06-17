@@ -43,7 +43,9 @@ header h1{
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   
-  
+}
+.navcontent a:hover{
+  color: red;
 }
 .navbar img{
   border-radius: 30%;
