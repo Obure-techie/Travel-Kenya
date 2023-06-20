@@ -1,9 +1,9 @@
-@media screen (min-width: 600px) and (max-width:800px){
-
 *{
   background-color: azure;
+  padding: 0;
+  top: -7%;
+  margin: 0;
 }
-
 
 header h1{
   color: blue;
@@ -30,6 +30,7 @@ header h1{
   padding: 5px;
   align-items: 20px;
   overflow: hidden;
+  position: relative;
 }
 .navcontent{
   list-style: none;
@@ -44,10 +45,13 @@ header h1{
   margin-bottom: 60px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+  display: inline-block;
+  font-size: 19px;
   
 }
 .navcontent a:hover{
   color: red;
+  text-decoration: underline rgb(20, 4, 4);
 }
 .navbar img{
   border-radius: 30%;
@@ -59,6 +63,10 @@ header h1{
  div p{
   font-size: medium;
   font-weight: 600;
+ }
+
+ footer{
+  margin-top: 10px;
  }
  footer a{
   border: 2px solid black;
@@ -74,7 +82,7 @@ header h1{
  }
 footer p{
   text-align: end;
+  margin-top: 10px;
 }
 
 
-}
