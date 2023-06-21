@@ -2,9 +2,6 @@
   padding: 0;
   top: -7%;
   margin: 0;
-<<<<<<< HEAD
-  position: sticky;
-=======
   box-sizing: border-box;
 }
 body {
@@ -31,7 +28,6 @@ body {
 }
 header {
   width: 100%;
->>>>>>> 5b2b895893cfd4c57ec4887c42bc424ff216b747
 }
 
 header h1 {
