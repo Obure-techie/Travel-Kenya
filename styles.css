@@ -1,93 +1,194 @@
-*{
-  background-color: azure;
+* {
   padding: 0;
   top: -7%;
   margin: 0;
+<<<<<<< HEAD
   position: sticky;
+=======
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+.main-container {
+  margin: 1em auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("imagesfolder/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50%;
+  background-blend-mode: hard-light;
+}
+header {
+  width: 100%;
+>>>>>>> 5b2b895893cfd4c57ec4887c42bc424ff216b747
 }
 
-header h1{
-  color: blue;
+header h1 {
+  color: rgb(0, 85, 255);
+  padding: 0.2em;
+  width: 100%;
   font-size: 40px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
   margin: 1em auto.1em auto;
-  text-shadow: 4px 4px 4px rgba(10, 34, 247, 0.9);
-
+  /* border: 2px solid orange; */
+  box-shadow: 1px 10px 11px rgba(0, 85, 255, 0.4);
+  /* text-shadow: 4px 4px 4px rgba(10, 34, 247, 0.9); */
 }
 
-
-.navbar{
-  display:flex;
-  flex-direction: column;
-  height: 150px;
-  width: 90vw;
-  margin-top:10px;
-  border: none;
-  border-radius:15px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 0.8px solid grey;
   padding: 5px;
   align-items: 20px;
   overflow: hidden;
   position: relative;
+  /* border: 2px solid orange; */
 }
-.navcontent{
+.navcontent {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  margin-bottom: 50px;
- 
 }
-.navcontent a{
-  text-decoration: none;
-  margin-bottom: 60px;
-  font-family: 'Courier New', Courier, monospace;
+.navcontent li {
+  font-size: 1.3em;
+  height: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: auto;
+  margin-left: 0.9em;
   font-weight: bold;
-  display: inline-block;
-  font-size: 19px;
-  
 }
-.navcontent a:hover{
-  color: red;
-  text-decoration: underline rgb(20, 4, 4);
+.navcontent a {
+  text-decoration: none;
+  color: rgb(0, 102, 255);
+  transition: all 0.5s;
+  padding: 0.7rem;
+  border-radius: 10px;
 }
-.navbar img{
+.navcontent a:hover {
+  color: rgb(0, 166, 255);
+  border: 0.3px solid white;
+  border-radius: 10px;
+  /* box-shadow: 4px 10px 15px rgba(0, 85, 255, 0.4); */
+}
+.navbar img {
   border-radius: 30%;
-  width: 90px;
-  height: 90px;
+  float: left;
+  width: 95px;
+  height: 95px;
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   position: relative;
 }
- div p{
+div p {
   font-size: medium;
   font-weight: 600;
   justify-content: center;
   line-height: 1.5;
- }
-
- footer{
-  margin-top: 10px;
- }
- footer a{
-  border: 2px solid black;
-  text-decoration: none;
-  background-color: white;
-  color: blue;
-  border-radius: 5px;
-  padding: 3px;
- }
- footer a:hover{
-  background-color: black;
-  color: white;
- }
-footer p{
-  text-align: end;
-  margin-top: 10px;
 }
 
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* border: 1px solid grey; */
+  padding: 2em;
+  /* box-shadow: 5px 5px 15px grey; */
+}
 
+footer {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+}
+footer .contact {
+  width: 30%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.contact p {
+  margin: 0.3em;
+}
+.social-media {
+  width: 30%;
+  display: grid;
+  place-content: center;
+}
+.social-media a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(0, 102, 255);
+}
+
+.social-media a:hover {
+  color: rgb(0, 166, 255);
+}
+.copyright {
+  width: 30%;
+}
+.copyright p {
+  margin: 0.3em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.menu {
+  scale: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 96%;
+  }
+  header h1{
+    font-size: 1.5em;
+  }
+  .navbar {
+    overflow-x: auto;
+  }
+  .navcontent li{
+    font-size: .9em;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .content{
+    width: 100%;
+    font-size: 1em;
+    margin: .6em;
+    border-bottom: .3px solid grey;
+  }
+  footer{
+    justify-content: space-between;
+  }
+  .social-media a{
+    font-size: .8em;
+  }
+  .contact p,.copyright p{
+    font-size: .7em;
+    margin: 1em;
+  }
+}
